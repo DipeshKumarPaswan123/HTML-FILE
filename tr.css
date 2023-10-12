@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.shiva-face {
+    width: 200px;
+    height: 200px;
+    background-color: #00f;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.third-eye {
+    width: 30px;
+    height: 30px;
+    background-color: #ff0;
+    border-radius: 50%;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.trishul {
+    width: 10px;
+    height: 120px;
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    clip-path: polygon(50% 0%, 55% 40%, 45% 40%);
+}

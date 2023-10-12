@@ -1,0 +1,15 @@
+body{
+    background-image: url("Pictures/61nzcns-G2L.jpg");
+}
+h1 {
+    border: solid;
+    border-bottom: dotted;
+    border-top: double;
+    border-color: black;
+    border-top-color: green;
+    color: red;
+}
+p1 {
+    border: dotted;
+    color: aqua;
+}

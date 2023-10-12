@@ -1,0 +1,18 @@
+table,th,td{
+   
+    border:  2px solid red;
+}
+   
+th,td{
+    border-style: dotted;
+  
+}
+th,td{
+    border-color: blue;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    text-align: center;
+}

@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.solar-system {
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+
+.sun {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    animation: rotate 10s linear infinite;
+}
+
+.planet {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.mercury {
+    background-color: #b88d72;
+    animation-name: orbit-mercury;
+}
+
+.venus {
+    background-color: #f5c271;
+    animation-name: orbit-venus;
+}
+
+.earth {
+    background-color: #4ba5d1;
+    animation-name: orbit-earth;
+}
+
+@keyframes rotate {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes orbit-mercury {
+    from {
+        transform: translateX(80px) rotate(0deg);
+    }
+    to {
+        transform: translateX(80px) rotate(360deg);
+    }
+}
+
+@keyframes orbit-venus {
+    from {
+        transform: translateX(130px) rotate(0deg);
+    }
+    to {
+        transform: translateX(130px) rotate(360deg);
+    }
+}
+
+@keyframes orbit-earth {
+    from {
+        transform: translateX(180px) rotate(0deg);
+    }
+    to {
+        transform: translateX(180px) rotate(360deg);
+    }
+}

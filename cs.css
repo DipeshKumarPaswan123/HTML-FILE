@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    perspective: 1000px;
+}
+
+.globe, .computer {
+    width: 100vw; /* Expand to full width of the viewport */
+    height: 100vh; /* Expand to full height of the viewport */
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.globe {
+    background-image: url('globe-1348777_640.webp');
+    animation-name: rotateGlobe;
+}
+
+.computer {
+    background-image: url('293r4lrg4bk71.jpg');
+    animation-name: rotateComputer;
+}
+
+@keyframes rotateGlobe {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes rotateComputer {
+    0% {
+        transform: rotateX(0deg);
+    }
+    100% {
+        transform: rotateX(360deg);
+    }
+}
